@@ -9,3 +9,10 @@ function doGet() {
   .setFaviconUrl('https://laverdadnoticias.com/__export/1513690711210/sites/laverdad/arte/apps/favicon.png_2040392579.png');
 
 }
+
+function incluirArchivo(pagina) {
+
+  let html = HtmlService.createTemplateFromFile(pagina);
+  return html.evaluate().getContent();
+  
+}
