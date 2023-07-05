@@ -1,0 +1,147 @@
+<!-- Modal -->
+<div class="container">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo prospecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form method="dialog" id="formulario">
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="col mb-2">
+                <input type="text" id="nombre" name="nombre" class="form-control" pattern="[\D]*"
+                  title="El nombre no puede contener números" placeholder="Nombre" required>
+              </div>
+              <div class="col mb-2">
+                <input type="text" id="apellidos" name="apellidos" class="form-control" pattern="[^0-9]*"
+                  title="El o los apellidos no pueden contener números" placeholder="Apellidos" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-2 input-group">
+                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" id="correo" name="correo" class="form-control" placeholder="Correo" required>
+              </div>
+              <div class="col mb-2 input-group">
+                <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                <input type="tel" id="movil" name="movil" class="form-control" pattern="[\d]{9,11}"
+                  title="El teléfono debe contener de 9 a 11 dígitos numéricos" placeholder="Móvil" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <select class="form-select" id="titulo" name="titulo" aria-label="Floating label select" required>
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Agente de ventas</option>
+                    <option value="2">CEO</option>
+                    <option value="1">Concierge</option>
+                    <option value="2">Director comercial</option>
+                    <option value="2">Director de compras</option>
+                    <option value="2">Director de marketing</option>
+                    <option value="2">Director de ventas</option>
+                  </select>
+                  <label for="titulo">Título</label>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <select class="form-select" id="genero" name="genero" aria-label="Floating label select" required>
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                  </select>
+                  <label for="genero">Género</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <select class="form-select" id="pais" name="pais" aria-label="Floating label select" required>
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">México</option>
+                    <option value="2">Estados Unidos</option>
+                    <option value="1">Otro</option>
+                  </select>
+                  <label for="pais">País</label>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <select class="form-select" id="estado" name="estado" aria-label="Floating label select" required>
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Quintana Roo</option>
+                    <option value="2">Yucatán</option>
+                    <option value="2">CDMX</option>
+                    <option value="2">Otro</option>
+                  </select>
+                  <label for="estado">Estado</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <select class="form-select" id="origen" name="origen" aria-label="Floating label select" required>
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Exphotel 2023</option>
+                    <option value="2">Referido</option>
+                    <option value="2">Campaña de marketing</option>
+                    <option value="1">Email</option>
+                    <option value="2">Sitio web</option>
+                    <option value="1">Google</option>
+                    <option value="2">Facebook</option>
+                    <option value="2">Instagram</option>
+                    <option value="2">Tiktok</option>
+                    <option value="2">Youtube</option>
+                    <option value="2">Twitter</option>
+                    <option value="2">Instagram</option>
+                    <option value="2">Contacto directo</option>
+                    <option value="2">Cliente previo</option>
+                  </select>
+                  <label for="origen">Origen</label>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <select class="form-select" id="marca" name="marca" aria-label="Floating label select" required>
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">La Verdad Noticias</option>
+                    <option value="2">Top Adventure</option>
+                    <option value="1">Sport Judge</option>
+                    <option value="2">Más Chisme</option>
+                  </select>
+                  <label for="marca">Marca</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-2">
+                <div class="form-floating">
+                  <textarea class="form-control" id="comentario"
+                    name="comentario" style="height: 100px"></textarea>
+                  <label for="comentario">Comentario</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-secondary">Agregar y nuevo</button>
+            <button type="button" class="btn btn-primary">Aceptar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
